@@ -1,5 +1,38 @@
-GET https://localhost:5001/Products/1 HTTP/1.1
+GET https://localhost:5001/Products/3 HTTP/1.1
 content-type: application/json
 
 ###
 
+
+GET https://localhost:5001/Products HTTP/1.1
+content-type: application/json
+
+
+###
+
+
+POST https://localhost:5001/Products HTTP/1.1
+Content-Type: application/json
+
+{
+    "Name" : "Plush Squirrel",
+    "Price" : 1.01
+}
+
+
+###
+
+PUT https://localhost:5001/Products/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "Id" : 2 ,
+    "Name" : "Knotted2 Rope" ,
+    "Price" : 1.99
+}
+
+
+###
+
+DELETE https://localhost:5001/Products/1 HTTP/1.1
+Content-Type: application/json
